@@ -1,0 +1,6 @@
+# CPU/offline checks and tests
+numpy>=1.24
+pytest>=7
+
+# GPU correctness and timing (install separately to match your CUDA build)
+# torch>=2.4

@@ -1,0 +1,50 @@
+{
+  "source": "B300, official benchmarks/bench_fwd.py; warmup=30 iters=200 repeats=5; mean over 1000 CUDA-event timings",
+  "shape": "T=8192, H=96, D=128",
+  "runs": {
+    "fixed": "20260909T164935Z",
+    "varlen": "20260909T165802Z"
+  },
+  "rows": [
+    {
+      "case": "fixed",
+      "flashkda_bf16_state_ms": 1.7553,
+      "flashkda_fp32_interface_ms": 1.7135,
+      "fla_chunk_kda_ms": 3.9279,
+      "fla_over_flash_fp32": 2.2923
+    },
+    {
+      "case": "varlen6",
+      "flashkda_bf16_state_ms": 1.4759,
+      "flashkda_fp32_interface_ms": 1.4976,
+      "fla_chunk_kda_ms": 4.0696,
+      "fla_over_flash_fp32": 2.7174
+    },
+    {
+      "case": "varlen8",
+      "flashkda_bf16_state_ms": 1.1866,
+      "flashkda_fp32_interface_ms": 1.2136,
+      "fla_chunk_kda_ms": 3.9648,
+      "fla_over_flash_fp32": 3.267
+    }
+  ],
+  "varlen6_lengths": [
+    1300,
+    547,
+    2048,
+    963,
+    271,
+    3063
+  ],
+  "varlen8_lengths": [
+    1024,
+    1024,
+    1024,
+    1024,
+    1024,
+    1024,
+    1024,
+    1024
+  ],
+  "note": "The FP32-state interface does not mean an internal FP32 recurrence; the kernel keeps BF16 state."
+}

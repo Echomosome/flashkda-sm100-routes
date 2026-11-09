@@ -1,0 +1,21 @@
+{
+  "status": "OFFLINE_ONLY",
+  "scope": "whole K2 recurrence transposed to make the value dimension M; K1 unchanged",
+  "checks": {
+    "baseline_source_invariants": "PASS",
+    "smem_integer_address_model": "24832 coordinates PASS",
+    "tmem_thread_ownership": "16384 state + 2048 U elements PASS",
+    "cpu_stage_chain": "12 groups, 1/2/8/32 chunks PASS",
+    "nvcc_13_0_88_compile": "14 K2 variants for A3 and HMMA control PASS",
+    "pinned_cute_layout_enumeration": "errors=0",
+    "sass": "each A3 K2 variant: 11 UTCHMMA, 0 HMMA; control: 104 HMMA, 0 UTCHMMA (static counts)"
+  },
+  "resources": {
+    "A3_registers_per_thread": "94-96",
+    "control_registers_per_thread": "56-64",
+    "spills": "0"
+  },
+  "target": "fixed T8192/H96/D128 complete forward >= 2x official",
+  "measured_on_gpu": false,
+  "blocker": "B300 scratch filesystem ENOSPC during the NCU run 20260911T121125285990Z; no GPU correctness or timing for this version"
+}

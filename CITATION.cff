@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or the results, cite this repository."
+title: "FlashKDA on Blackwell: reproduction and three SM100 routes"
+abstract: "Reproduction of FlashKDA on an NVIDIA B300, analysis of its SM80-MMA design, and three implemented alternatives (tcgen05 Phase 6, large-chunk rebasing, value-column split) with full-KDA correctness and complete-forward timing."
+version: 1.0.0
+date-released: 2026-11-09
+license: MIT
+authors:
+  - name: "flashkda-sm100-routes authors"
+repository-code: "https://github.com/Echomosome/flashkda-sm100-routes"
+keywords:
+  - FlashKDA
+  - KDA
+  - Blackwell
+  - tcgen05
+  - CUDA
+  - attention

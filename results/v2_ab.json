@@ -1,0 +1,219 @@
+{
+  "run_id": "20260911T080847138521Z",
+  "slurm_job": "25909",
+  "correctness_run": "20260911T072454980341Z_task3_ab_v2",
+  "correctness_comparisons": 350,
+  "method": "same complete-forward CUDA Graph protocol as v1; 20 comparisons, 480 raw timings, 80 postchecks",
+  "rows": [
+    {
+      "shape": "fixed_h96",
+      "impl": "A_control",
+      "official_ms": 1.0308,
+      "candidate_ms": 1.288688,
+      "official_over_candidate": 0.7999,
+      "time_change_pct": 25.02,
+      "v1_ms": 2.72224,
+      "v1_over_v2": 2.1124
+    },
+    {
+      "shape": "fixed_h96",
+      "impl": "A",
+      "official_ms": 1.031824,
+      "candidate_ms": 1.389152,
+      "official_over_candidate": 0.7428,
+      "time_change_pct": 34.63,
+      "v1_ms": 2.914528,
+      "v1_over_v2": 2.0981
+    },
+    {
+      "shape": "varlen6_h96",
+      "impl": "A_control",
+      "official_ms": 0.863904,
+      "candidate_ms": 0.995664,
+      "official_over_candidate": 0.8677,
+      "time_change_pct": 15.25,
+      "v1_ms": 1.823568,
+      "v1_over_v2": 1.8315
+    },
+    {
+      "shape": "varlen6_h96",
+      "impl": "A",
+      "official_ms": 0.8636,
+      "candidate_ms": 0.995824,
+      "official_over_candidate": 0.8672,
+      "time_change_pct": 15.31,
+      "v1_ms": 2.16488,
+      "v1_over_v2": 2.174
+    },
+    {
+      "shape": "varlen8_h96",
+      "impl": "A_control",
+      "official_ms": 0.691136,
+      "candidate_ms": 0.781024,
+      "official_over_candidate": 0.8849,
+      "time_change_pct": 13.01,
+      "v1_ms": 1.347904,
+      "v1_over_v2": 1.7258
+    },
+    {
+      "shape": "varlen8_h96",
+      "impl": "A",
+      "official_ms": 0.690752,
+      "candidate_ms": 0.782288,
+      "official_over_candidate": 0.883,
+      "time_change_pct": 13.25,
+      "v1_ms": 1.626736,
+      "v1_over_v2": 2.0795
+    },
+    {
+      "shape": "fixed_h12",
+      "impl": "A_control",
+      "official_ms": 0.788656,
+      "candidate_ms": 1.05184,
+      "official_over_candidate": 0.7498,
+      "time_change_pct": 33.37,
+      "v1_ms": 2.49032,
+      "v1_over_v2": 2.3676
+    },
+    {
+      "shape": "fixed_h12",
+      "impl": "A",
+      "official_ms": 0.788944,
+      "candidate_ms": 1.151984,
+      "official_over_candidate": 0.6849,
+      "time_change_pct": 46.02,
+      "v1_ms": 2.681632,
+      "v1_over_v2": 2.3278
+    },
+    {
+      "shape": "fixed_h96",
+      "impl": "B16",
+      "official_ms": 1.031472,
+      "candidate_ms": 11.796192,
+      "official_over_candidate": 0.0874,
+      "time_change_pct": 1043.63,
+      "v1_ms": 99.041443,
+      "v1_over_v2": 8.3961
+    },
+    {
+      "shape": "fixed_h96",
+      "impl": "B32",
+      "official_ms": 1.030848,
+      "candidate_ms": 14.639808,
+      "official_over_candidate": 0.0704,
+      "time_change_pct": 1320.17,
+      "v1_ms": 120.475056,
+      "v1_over_v2": 8.2293
+    },
+    {
+      "shape": "fixed_h96",
+      "impl": "B64",
+      "official_ms": 1.032032,
+      "candidate_ms": 26.473456,
+      "official_over_candidate": 0.039,
+      "time_change_pct": 2465.18,
+      "v1_ms": 199.144356,
+      "v1_over_v2": 7.5224
+    },
+    {
+      "shape": "varlen6_h96",
+      "impl": "B16",
+      "official_ms": 0.859344,
+      "candidate_ms": 9.403264,
+      "official_over_candidate": 0.0914,
+      "time_change_pct": 994.24,
+      "v1_ms": 100.079697,
+      "v1_over_v2": 10.6431
+    },
+    {
+      "shape": "varlen6_h96",
+      "impl": "B32",
+      "official_ms": 0.862976,
+      "candidate_ms": 12.175424,
+      "official_over_candidate": 0.0709,
+      "time_change_pct": 1310.86,
+      "v1_ms": 120.94413,
+      "v1_over_v2": 9.9335
+    },
+    {
+      "shape": "varlen6_h96",
+      "impl": "B64",
+      "official_ms": 0.86576,
+      "candidate_ms": 22.577264,
+      "official_over_candidate": 0.0383,
+      "time_change_pct": 2507.8,
+      "v1_ms": 198.725151,
+      "v1_over_v2": 8.802
+    },
+    {
+      "shape": "varlen8_h96",
+      "impl": "B16",
+      "official_ms": 0.690464,
+      "candidate_ms": 8.96008,
+      "official_over_candidate": 0.0771,
+      "time_change_pct": 1197.69,
+      "v1_ms": 99.401104,
+      "v1_over_v2": 11.0938
+    },
+    {
+      "shape": "varlen8_h96",
+      "impl": "B32",
+      "official_ms": 0.691392,
+      "candidate_ms": 11.601344,
+      "official_over_candidate": 0.0596,
+      "time_change_pct": 1577.97,
+      "v1_ms": 120.791981,
+      "v1_over_v2": 10.4119
+    },
+    {
+      "shape": "varlen8_h96",
+      "impl": "B64",
+      "official_ms": 0.690992,
+      "candidate_ms": 21.28704,
+      "official_over_candidate": 0.0325,
+      "time_change_pct": 2980.65,
+      "v1_ms": 197.996399,
+      "v1_over_v2": 9.3013
+    },
+    {
+      "shape": "fixed_h12",
+      "impl": "B16",
+      "official_ms": 0.785968,
+      "candidate_ms": 10.138944,
+      "official_over_candidate": 0.0775,
+      "time_change_pct": 1189.99,
+      "v1_ms": 46.081697,
+      "v1_over_v2": 4.545
+    },
+    {
+      "shape": "fixed_h12",
+      "impl": "B32",
+      "official_ms": 0.786112,
+      "candidate_ms": 11.513312,
+      "official_over_candidate": 0.0683,
+      "time_change_pct": 1364.59,
+      "v1_ms": 32.832479,
+      "v1_over_v2": 2.8517
+    },
+    {
+      "shape": "fixed_h12",
+      "impl": "B64",
+      "official_ms": 0.785936,
+      "candidate_ms": 20.054144,
+      "official_over_candidate": 0.0392,
+      "time_change_pct": 2451.63,
+      "v1_ms": 35.571184,
+      "v1_over_v2": 1.7738
+    }
+  ],
+  "key_findings": [
+    "A2 fixed H96 is 2.098x faster than A v1 (2.914528 -> 1.389152 ms) but still 0.743x of the official 1.031824 ms.",
+    "The A2 HMMA control (same data path) is 1.288688 ms, 0.800x of official; the shared data-path cost is substantial.",
+    "B2 fused Triton is 7.5-11.1x faster than B1 depending on shape, but still 11.4-25.7x slower than official at H96.",
+    "All 20 candidate-vs-official rows remain below 1.0x at H96; no positive result."
+  ],
+  "limitations": [
+    "v1/v2 ratios compare different runs, not paired repeats.",
+    "B2 changed both fusion and matmul precision (tf32x3), so v1/v2 is not a single-change ablation."
+  ]
+}

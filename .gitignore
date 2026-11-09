@@ -1,0 +1,26 @@
+# Upstream checkout and run artifacts
+FlashKDA/
+runs/
+*.so
+*.cubin
+*.ptx
+*.ncu-rep
+*.nsys-rep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,351 @@
+{
+  "run_id": "20260911T015639253562Z",
+  "correctness_run_id": "20260911T013931783287Z",
+  "gpu": "NVIDIA B300 SXM6 AC, compute capability 10.3, 148 SM",
+  "method": "complete forward in one CUDA Graph; 12 alternating rounds; 5 eager + 3 graph warmups; post-timing poison check; unmodified clocks, reused buffers, no cache flush",
+  "correctness": {
+    "cases_per_impl": 38,
+    "output_checks_per_impl": 38,
+    "state_checks_per_impl": 32,
+    "impls": [
+      "A_control",
+      "A",
+      "B16",
+      "B32",
+      "B64",
+      "C"
+    ],
+    "total_output_state_comparisons": 420,
+    "initial_unchanged_records": 228,
+    "all_pass": true
+  },
+  "comparisons": [
+    {
+      "case": "fixed_h96",
+      "impl": "A_control",
+      "baseline_ms": 1.0291039943695068,
+      "candidate_ms": 2.7222399711608887,
+      "speedup": 0.37803573721336897,
+      "time_change_pct": 164.52525556746113,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h96",
+      "impl": "A",
+      "baseline_ms": 1.0302240252494812,
+      "candidate_ms": 2.914528012275696,
+      "speedup": 0.3534788552075267,
+      "time_change_pct": 182.90235335658255,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen6_h96",
+      "impl": "A_control",
+      "baseline_ms": 0.8570720255374908,
+      "candidate_ms": 1.8235679864883423,
+      "speedup": 0.46999729754411873,
+      "time_change_pct": 112.76718083812595,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen6_h96",
+      "impl": "A",
+      "baseline_ms": 0.8602239787578583,
+      "candidate_ms": 2.1648800373077393,
+      "speedup": 0.3973541092039627,
+      "time_change_pct": 151.66469323882038,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen8_h96",
+      "impl": "A_control",
+      "baseline_ms": 0.6903200149536133,
+      "candidate_ms": 1.3479040265083313,
+      "speedup": 0.512143299061023,
+      "time_change_pct": 95.25785104157889,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen8_h96",
+      "impl": "A",
+      "baseline_ms": 0.6888160109519958,
+      "candidate_ms": 1.6267359852790833,
+      "speedup": 0.4234344215566255,
+      "time_change_pct": 136.16407856588745,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h12",
+      "impl": "A_control",
+      "baseline_ms": 0.7939200103282928,
+      "candidate_ms": 2.4903199672698975,
+      "speedup": 0.31880241124141817,
+      "time_change_pct": 213.67391360247092,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h12",
+      "impl": "A",
+      "baseline_ms": 0.79339200258255,
+      "candidate_ms": 2.681631922721863,
+      "speedup": 0.2958616340520198,
+      "time_change_pct": 237.99583484493806,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h96",
+      "impl": "B16",
+      "baseline_ms": 1.0311520099639893,
+      "candidate_ms": 99.04144287109375,
+      "speedup": 0.01041131853567676,
+      "time_change_pct": 9504.931369386804,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h96",
+      "impl": "B32",
+      "baseline_ms": 1.0330080389976501,
+      "candidate_ms": 120.47505569458008,
+      "speedup": 0.00857445579121756,
+      "time_change_pct": 11562.547738881065,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h96",
+      "impl": "B64",
+      "baseline_ms": 1.0332639813423157,
+      "candidate_ms": 199.14435577392578,
+      "speedup": 0.005188517532052506,
+      "time_change_pct": 19173.327955864374,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen6_h96",
+      "impl": "B16",
+      "baseline_ms": 0.8638719916343689,
+      "candidate_ms": 100.07969665527344,
+      "speedup": 0.00863184062807458,
+      "time_change_pct": 11485.014634625619,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen6_h96",
+      "impl": "B32",
+      "baseline_ms": 0.8611039817333221,
+      "candidate_ms": 120.94412994384766,
+      "speedup": 0.0071198493232628845,
+      "time_change_pct": 13945.241052119905,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen6_h96",
+      "impl": "B64",
+      "baseline_ms": 0.8653119802474976,
+      "candidate_ms": 198.72515106201172,
+      "speedup": 0.004354315372881407,
+      "time_change_pct": 22865.722837348458,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen8_h96",
+      "impl": "B16",
+      "baseline_ms": 0.6928640007972717,
+      "candidate_ms": 99.40110397338867,
+      "speedup": 0.006970385368987079,
+      "time_change_pct": 14246.409087354632,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen8_h96",
+      "impl": "B32",
+      "baseline_ms": 0.6929279863834381,
+      "candidate_ms": 120.7919807434082,
+      "speedup": 0.0057365396454205604,
+      "time_change_pct": 17332.11172258337,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen8_h96",
+      "impl": "B64",
+      "baseline_ms": 0.6955359876155853,
+      "candidate_ms": 197.99639892578125,
+      "speedup": 0.0035128719077174037,
+      "time_change_pct": 28366.736797408037,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h12",
+      "impl": "B16",
+      "baseline_ms": 0.7910879850387573,
+      "candidate_ms": 46.08169746398926,
+      "speedup": 0.017167075619489852,
+      "time_change_pct": 5725.103949939475,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h12",
+      "impl": "B32",
+      "baseline_ms": 0.79025599360466,
+      "candidate_ms": 32.83247947692871,
+      "speedup": 0.024069336406955518,
+      "time_change_pct": 4054.663772579213,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h12",
+      "impl": "B64",
+      "baseline_ms": 0.7903839945793152,
+      "candidate_ms": 35.571184158325195,
+      "speedup": 0.02221978304296432,
+      "time_change_pct": 4400.493988021365,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h96",
+      "impl": "C",
+      "baseline_ms": 1.0284799933433533,
+      "candidate_ms": 1.16292804479599,
+      "speedup": 0.8843883316304212,
+      "time_change_pct": 13.072500420312206,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen6_h96",
+      "impl": "C",
+      "baseline_ms": 0.8597120046615601,
+      "candidate_ms": 0.9842720031738281,
+      "speedup": 0.8734496174729964,
+      "time_change_pct": 14.488572665831633,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "varlen8_h96",
+      "impl": "C",
+      "baseline_ms": 0.6897760033607483,
+      "candidate_ms": 0.7899999916553497,
+      "speedup": 0.8731341906920858,
+      "time_change_pct": 14.52993258772224,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    },
+    {
+      "case": "fixed_h12",
+      "impl": "C",
+      "baseline_ms": 0.7919839918613434,
+      "candidate_ms": 0.6858719885349274,
+      "speedup": 1.1547110905536162,
+      "time_change_pct": -13.398251027401265,
+      "status": "ACCEPTED_AFTER_POSTCHECK"
+    }
+  ],
+  "controls": [
+    {
+      "case": "fixed_h96",
+      "A_over_control": 1.0706359627188953,
+      "A_time_change_vs_control_pct": 7.063596271889527,
+      "B32_over_B16": 1.2164105469604578,
+      "B64_over_B16": 2.010717433035783,
+      "B32_time_change_vs_B16_pct": 21.64105469604578,
+      "B64_time_change_vs_B16_pct": 101.07174330357829,
+      "baseline_median_range_ms": [
+        1.0284799933433533,
+        1.0332639813423157
+      ]
+    },
+    {
+      "case": "varlen6_h96",
+      "A_over_control": 1.187167165331008,
+      "A_time_change_vs_control_pct": 18.716716533100808,
+      "B32_over_B16": 1.2084781827471178,
+      "B64_over_B16": 1.9856689988432377,
+      "B32_time_change_vs_B16_pct": 20.847818274711784,
+      "B64_time_change_vs_B16_pct": 98.56689988432376,
+      "baseline_median_range_ms": [
+        0.8570720255374908,
+        0.8653119802474976
+      ]
+    },
+    {
+      "case": "varlen8_h96",
+      "A_over_control": 1.206863362143854,
+      "A_time_change_vs_control_pct": 20.686336214385403,
+      "B32_over_B16": 1.2151975774408523,
+      "B64_over_B16": 1.9918933594418446,
+      "B32_time_change_vs_B16_pct": 21.519757744085233,
+      "B64_time_change_vs_B16_pct": 99.18933594418446,
+      "baseline_median_range_ms": [
+        0.6888160109519958,
+        0.6955359876155853
+      ]
+    },
+    {
+      "case": "fixed_h12",
+      "A_over_control": 1.0768222388955495,
+      "A_time_change_vs_control_pct": 7.682223889554951,
+      "B32_over_B16": 0.7124841593039362,
+      "B64_over_B16": 0.7719156653489696,
+      "B32_time_change_vs_B16_pct": -28.751584069606384,
+      "B64_time_change_vs_B16_pct": -22.80843346510304,
+      "baseline_median_range_ms": [
+        0.79025599360466,
+        0.7939200103282928
+      ]
+    }
+  ],
+  "sass": [
+    {
+      "route": "A_control",
+      "functions": 14,
+      "per_function_static_opcodes": {
+        "HMMA.16816.F32.BF16": 76
+      }
+    },
+    {
+      "route": "A",
+      "functions": 14,
+      "per_function_static_opcodes": {
+        "HMMA.16816.F32.BF16": 72,
+        "UTCHMMA": 1
+      }
+    },
+    {
+      "route": "C",
+      "functions": 14,
+      "per_function_static_opcodes": {
+        "HMMA.16816.F32.BF16": 104
+      }
+    }
+  ],
+  "compiled_resources": [
+    {
+      "bytes": 110848,
+      "chunk": 16,
+      "extra_buffers": "U_and_packed_A_B; actual_TMEM_residency_not_measured",
+      "route": "A_control",
+      "threads": 192
+    },
+    {
+      "bytes": 110848,
+      "chunk": 16,
+      "extra_buffers": "U_and_packed_A_B; actual_TMEM_residency_not_measured",
+      "route": "A",
+      "threads": 192
+    },
+    {
+      "route": "C",
+      "values": [
+        68608,
+        128,
+        64,
+        128,
+        16,
+        2
+      ]
+    }
+  ],
+  "limitations": [
+    "one invocation, 12 rounds per pair; duplicate attachment is not a second run",
+    "unmodified clocks, reused buffers, no cache flush, GPU Graph time",
+    "B uses FP32 state and a PyTorch CUDA composite implementation",
+    "A control changes shared-memory packing, layout and synchronization together"
+  ]
+}

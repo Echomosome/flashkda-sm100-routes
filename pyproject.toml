@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flashkda-routes"
+version = "1.0.0"
+description = "Reproduction and SM100 alternative routes for FlashKDA on Blackwell"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "flashkda-routes authors"}]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+cuda = ["torch>=2.4"]
+test = ["pytest>=7"]
+
+[project.scripts]
+flashkda-routes = "flashkda_routes.cli:main"
+
+[tool.setuptools]
+packages = ["flashkda_routes", "flashkda_routes.routes", "flashkda_routes.probes"]
+
+[tool.setuptools.package-data]
+"flashkda_routes.routes" = ["*.cuh"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
